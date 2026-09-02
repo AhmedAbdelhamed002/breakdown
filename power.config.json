@@ -1,0 +1,298 @@
+{
+  "version": "1.0",
+  "appId": "154ec497-8339-48c6-a25e-8c24490b32be",
+  "appDisplayName": "Planning & Monitoring",
+  "region": "prod",
+  "appType": "CodeApp",
+  "environmentId": "9ce6fb09-5b63-e9f4-9185-b707b4b3425e",
+  "description": " ",
+  "buildPath": "./dist",
+  "buildEntryPoint": "index.html",
+  "localAppUrl": "http://localhost:3000",
+  "logoPath": "Default",
+  "connectionReferences": {
+    "dc57c8ab-d8cf-4a4d-8f8b-0b98cfff2cfd": {
+      "id": "/providers/Microsoft.PowerApps/apis/shared_commondataservice",
+      "displayName": "Microsoft Dataverse",
+      "dataSources": [
+        "kpidriverbindings"
+      ],
+      "dataSets": {
+        "default.cds": {
+          "dataSources": {
+            "kpidriverbindings": {
+              "tableName": "btm_kpidriverbindings"
+            }
+          }
+        }
+      }
+    }
+  },
+  "databaseReferences": {
+    "default.cds": {
+      "dataSources": {
+        "businessunits": {
+          "entitySetName": "businessunits",
+          "logicalName": "businessunit",
+          "isHidden": false
+        },
+        "users": {
+          "entitySetName": "systemusers",
+          "logicalName": "systemuser",
+          "isHidden": false
+        },
+        "kpis": {
+          "entitySetName": "strategy_kpises",
+          "logicalName": "strategy_kpis",
+          "isHidden": false
+        },
+        "functions": {
+          "entitySetName": "hr_functions",
+          "logicalName": "hr_function",
+          "isHidden": false
+        },
+        "activitylogs": {
+          "entitySetName": "pm_activitylogs",
+          "logicalName": "pm_activitylog",
+          "isHidden": false
+        },
+        "conflicts": {
+          "entitySetName": "pm_conflicts",
+          "logicalName": "pm_conflict",
+          "isHidden": false
+        },
+        "kpiachievements": {
+          "entitySetName": "pm_kpiachievments",
+          "logicalName": "pm_kpiachievment",
+          "isHidden": false
+        },
+        "kpiceilings": {
+          "entitySetName": "pm_kpiceilings",
+          "logicalName": "pm_kpiceiling",
+          "isHidden": false
+        },
+        "models": {
+          "entitySetName": "pm_models",
+          "logicalName": "pm_model",
+          "isHidden": false
+        },
+        "modelterms": {
+          "entitySetName": "pm_modelterms",
+          "logicalName": "pm_modelterm",
+          "isHidden": false
+        },
+        "orgoutcomes": {
+          "entitySetName": "pm_orgoutcomes",
+          "logicalName": "pm_orgoutcome",
+          "isHidden": false
+        },
+        "orgoutcomeachievments": {
+          "entitySetName": "pm_orgoutcomeachievments",
+          "logicalName": "pm_orgoutcomeachievment",
+          "isHidden": false
+        },
+        "orgoutputs": {
+          "entitySetName": "pm_orgoutputs",
+          "logicalName": "pm_orgoutput",
+          "isHidden": false
+        },
+        "orgoutputachievments": {
+          "entitySetName": "pm_orgoutputachievments",
+          "logicalName": "pm_orgoutputachievment",
+          "isHidden": false
+        },
+        "orgoutputoutcomes": {
+          "entitySetName": "pm_orgoutputoutcomes",
+          "logicalName": "pm_orgoutputoutcome",
+          "isHidden": false
+        },
+        "outcomecontributions": {
+          "entitySetName": "pm_outcomecontributions",
+          "logicalName": "pm_outcomecontribution",
+          "isHidden": false
+        },
+        "outputcontributions": {
+          "entitySetName": "pm_outputcontributions",
+          "logicalName": "pm_outputcontribution",
+          "isHidden": false
+        },
+        "proposals": {
+          "entitySetName": "pm_proposals",
+          "logicalName": "pm_proposal",
+          "isHidden": false
+        },
+        "relationfactors": {
+          "entitySetName": "pm_relationfactors",
+          "logicalName": "pm_relationfactor",
+          "isHidden": false
+        },
+        "targetversions": {
+          "entitySetName": "pm_targetversions",
+          "logicalName": "pm_targetversion",
+          "isHidden": false
+        },
+        "workingdayss": {
+          "entitySetName": "pm_workingdayses",
+          "logicalName": "pm_workingdays",
+          "isHidden": false
+        },
+        "kpiachievementbreakdowns": {
+          "entitySetName": "stf_kpiachievmentbreakdowns",
+          "logicalName": "stf_kpiachievmentbreakdown",
+          "isHidden": false
+        },
+        "strategies": {
+          "entitySetName": "strategy_strategies",
+          "logicalName": "strategy_strategy",
+          "isHidden": false
+        },
+        "organizationalobjectives": {
+          "entitySetName": "stf_organizationalobjectives",
+          "logicalName": "stf_organizationalobjective",
+          "isHidden": false
+        },
+        "objectivedepartments": {
+          "entitySetName": "stf_objectivedepartments",
+          "logicalName": "stf_objectivedepartment",
+          "isHidden": false
+        },
+        "strategykpis": {
+          "entitySetName": "stf_strategykpis",
+          "logicalName": "stf_strategykpi",
+          "isHidden": false
+        },
+        "strategytactics": {
+          "entitySetName": "stf_strategytactics",
+          "logicalName": "stf_strategytactic",
+          "isHidden": false
+        },
+        "strategypocs": {
+          "entitySetName": "stf_strategypocs",
+          "logicalName": "stf_strategypoc",
+          "isHidden": false
+        },
+        "executioncategories": {
+          "entitySetName": "stf_executioncategories",
+          "logicalName": "stf_executioncategory",
+          "isHidden": false
+        },
+        "processes": {
+          "entitySetName": "strategy_processes",
+          "logicalName": "strategy_process",
+          "isHidden": false
+        },
+        "strategicthemes": {
+          "entitySetName": "stf_themes",
+          "logicalName": "stf_theme",
+          "isHidden": false
+        },
+        "revisioncomments": {
+          "entitySetName": "stf_revisioncomments",
+          "logicalName": "stf_revisioncomment",
+          "isHidden": false
+        },
+        "decisionlogentries": {
+          "entitySetName": "stf_decisionlogs",
+          "logicalName": "stf_decisionlog",
+          "isHidden": false
+        },
+        "alignmentsessions": {
+          "entitySetName": "stf_alignmentsessions",
+          "logicalName": "stf_alignmentsession",
+          "isHidden": false
+        },
+        "alignmentstakeholders": {
+          "entitySetName": "stf_alignmentstakeholders",
+          "logicalName": "stf_alignmentstakeholder",
+          "isHidden": false
+        },
+        "departments": {
+          "entitySetName": "cr603_chklst_departmentses",
+          "logicalName": "cr603_chklst_departments",
+          "isHidden": false
+        },
+        "regionses": {
+          "entitySetName": "crd04_regionses",
+          "logicalName": "crd04_regions",
+          "isHidden": false
+        },
+        "specialties": {
+          "entitySetName": "crd04_specialtieses",
+          "logicalName": "crd04_specialties",
+          "isHidden": false
+        },
+        "entities": {
+          "entitySetName": "cr603_entitieses",
+          "logicalName": "cr603_entities",
+          "isHidden": false
+        },
+        "specialtyksa_service_hubs": {
+          "entitySetName": "cr301_specialtyksa_service_hubs",
+          "logicalName": "cr301_specialtyksa_service_hub",
+          "isHidden": false
+        },
+        "tasks": {
+          "entitySetName": "hx_taskses",
+          "logicalName": "hx_tasks",
+          "isHidden": false
+        },
+        "projects": {
+          "entitySetName": "cr603_projectses",
+          "logicalName": "cr603_projects",
+          "isHidden": false
+        },
+        "companies": {
+          "entitySetName": "and_companies",
+          "logicalName": "and_company",
+          "isHidden": false
+        },
+        "pocimpacts": {
+          "entitySetName": "pm_pocimpacts",
+          "logicalName": "pm_pocimpact",
+          "isHidden": false
+        },
+        "tacticimpacts": {
+          "entitySetName": "pm_tacticimpacts",
+          "logicalName": "pm_tacticimpact",
+          "isHidden": false
+        },
+        "strategysetups": {
+          "entitySetName": "pm_strategysetups",
+          "logicalName": "pm_strategysetup",
+          "isHidden": false
+        },
+        "accounts": {
+          "entitySetName": "cr301_accounts",
+          "logicalName": "cr301_account",
+          "isHidden": false
+        },
+        "employees": {
+          "entitySetName": "hr_employees",
+          "logicalName": "hr_employee",
+          "isHidden": false
+        },
+        "newdoctordatasets": {
+          "entitySetName": "cr301_newdoctordatasets",
+          "logicalName": "cr301_newdoctordataset",
+          "isHidden": false
+        },
+        "platforms": {
+          "entitySetName": "stf_platforms",
+          "logicalName": "stf_platform",
+          "isHidden": false
+        },
+        "subaccounts": {
+          "entitySetName": "cr301_subaccounts",
+          "logicalName": "cr301_subaccount",
+          "isHidden": false
+        },
+        "servicecategories": {
+          "entitySetName": "pm_servicecategories",
+          "logicalName": "pm_servicecategory",
+          "isHidden": false
+        }
+      },
+      "environmentVariableName": ""
+    }
+  }
+}
